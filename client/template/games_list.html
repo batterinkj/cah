@@ -1,0 +1,29 @@
+<template name = "gamesList">
+   <div class="row white tpadding-20 bpadding-20">
+       <div id = "errorMessages" class = "col-sm-6 col-xs-10 col-sm-offset-3 col-xs-offset-1"></div>
+       <div class = "col-sm-6 col-xs-10 col-sm-offset-3 col-xs-offset-1 bmargin-10">
+           <input type="text" aria-describedby="sizing-addon1" class = "form-control" placeholder="Player Name" id = "enterPlayerName" name="enterPlayerName" value = "{{playerName}}"/>
+        </div>
+       <div class = "col-xs-10 col-sm-6 col-sm-offset-3 col-xs-offset-1">
+           {{#each games}}
+                <div class = "card blackcard col-xs-12 relative">
+                    <div class = "col-xs-12 gameTitle" id = "joinGame">{{title}}</div>
+                    <div class = "col-xs-12 bpadding-20"><div class='lfloat'>Players:</div>
+                        {{#each gamePlayers}}
+                            <div class="playerName">{{name}}</div>
+                        {{/each}}
+                    </div>
+                    {{#if creator}}<div id = "deleteGameButton" class = "btn-sm btn-default">Delete</div>{{/if}}
+                </div>
+            {{/each}}
+            <div class = "card blackcard col-xs-12">
+                <a href="{{pathFor 'gameNew'}}">
+                    <div class = "col-xs-12 bpadding-20">
+                        <div><span class="font4 black">+</span></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</template>

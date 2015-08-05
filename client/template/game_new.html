@@ -1,0 +1,12 @@
+<template name="gameNew">
+       <div class = "col-xs-12 white">
+           <div class = "col-xs-offset-1 col-sm-offset-2 col-xs-10 col-sm-8 bpadding-20 tpadding-20">
+                   {{#autoForm collection="Games" id="insertGameForm" type="insert"}}
+                       {{> afQuickField name='title'}}
+                       {{> afQuickField name="timerLength"}}
+                       {{> afQuickField name='password'}}
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    {{/autoForm}}
+            </div>
+        </div>
+</template>

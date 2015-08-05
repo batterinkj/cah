@@ -1,0 +1,94 @@
+body,html{
+    height:100%;
+}
+body{
+    background-color:white;
+}
+
+.mainContainer{
+    min-height:100%;
+    background-color:black;
+    position:relative;
+    padding-bottom:40px;
+}
+.green{
+   background-color: #95C7A0; 
+}
+.purple{
+   background-color: #C795BC;
+}
+
+.blue{
+    background-color:#95A3C7;
+}
+.black{
+    background-color:black !important;
+    color:white !important;
+}
+.relative{
+    position:relative;
+}
+
+.red{
+    background-color:#C795A4;
+}
+.white{
+    background-color:white !important;
+    color:black !important;
+}
+.text-center{
+    text-align:center;
+}
+.rfloat{
+    float:right;
+}
+.lfloat{
+    float:left;
+}
+
+.tpadding-20{
+    padding-top:20px;
+}
+.bpadding-20{
+    padding-bottom:20px;
+}
+.bpadding-10{
+    padding-bottom:10px;
+}
+.bmargin-20{
+    margin-bottom:20px;
+}
+.bmargin-10{
+    margin-bottom:10px;
+}
+
+.lmargin-10{
+    margin-left:10px;   
+}
+.tmargin-10{
+    margin-top:10px;
+}
+
+.inline{
+    display:inline;
+}
+
+.font4{
+    font-size:4em;
+}
+
+@media screen and (max-width: 767px) {
+    .lmargin-xs-1{
+        margin-left:8.333%;
+    }
+}
+@media screen and (min-width: 767px) {
+    .lmargin-sm-2{
+        margin-left:16.666%;
+    }
+}
+
+#errorMessages{
+    text-align:center;
+    color:red;
+}

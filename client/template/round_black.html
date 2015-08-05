@@ -1,0 +1,15 @@
+<template name = "roundBlack">
+        <div class = "card blackcard selectingWinner {{selected}} {{#if host}}{{selectableOrUnselectable}}{{/if}}">
+            <div class = "blackText">
+                {{> Template.contentBlock}}
+            </div>
+            <div class = "cardBottom">
+                <div class = "draw">
+                    {{#if ../black/draw}}Draw: {{../black/draw}}{{/if}}
+                </div>
+                <div class = "pick">
+                    Pick: {{../black/pick}}
+                </div>
+            </div>
+        </div>
+</template>

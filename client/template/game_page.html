@@ -1,0 +1,16 @@
+<template name = "gamePage">
+    {{#if creatorAndNewGame}}
+        <div class = "row bpadding-20">
+            <div class="col-xs-offset-1 col-sm-offset-3 col-lg-offset-4 col-xs-10 col-sm-6 col-lg-4">
+                <span class = "btn btn-default" id="startGame">Start Game</span>
+            </div>
+        </div>
+    {{/if}}
+    {{#with currentRound}}
+        {{>gameRound}}
+    {{/with}}
+    <div class = "white" id="scoreBox">
+        {{>gameScores}}
+        <a id="scoresButton" class="btn btn-primary" role="button" data-toggle="collapse" href="#scores">{{title}} Scores</a>
+    </div>
+</template>

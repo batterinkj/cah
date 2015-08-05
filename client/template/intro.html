@@ -1,0 +1,13 @@
+<template name = "intro">
+   <div class = "container-fluid black">
+     <div class="service-login-buttons">
+        <div class="col-sm-3 hidden-xs"></div>
+       <div class = "col-sm-6 col-xs-12">
+                 {{#each service}}
+                {{> _loginButtonsLoggedOutAllServices}}
+                  {{/each}}
+          </div>
+        <div class="col-sm-3 hidden-xs"></div>
+      </div>
+   </div>
+</template> 

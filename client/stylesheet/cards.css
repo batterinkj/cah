@@ -1,0 +1,72 @@
+.card{
+    border-radius:10px;
+    padding:10px 5px;
+    text-align: center;
+    display: inline-block;
+    vertical-align:top;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float:left;
+    border:2px solid black;
+    min-width:150px;
+}
+
+.whitecard{
+    background-color:white;
+    color:black;
+}
+
+.selectable,.unselectable{
+    cursor:pointer;
+}
+
+.cardButton{
+    background-color:white;
+    width:100%;
+    border-radius:10px;
+    font-size:1.2em;
+    padding: 10px 20px 10px 20px;
+    text-align:center;
+    cursor:pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.selected{
+    border-color: #87183F !important;
+}
+
+#customWhiteCard{
+    height:80%;
+    resize:none;
+    width:80%;
+    margin:0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .selected.whitecard{
+        height:auto;
+        min-height:50%;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .whitecard{
+        height: 175px;
+        width: 150px;
+        padding-top:20px;
+    }
+    .blackcard{
+        height: 175px;
+    }
+}
+

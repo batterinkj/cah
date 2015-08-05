@@ -1,0 +1,16 @@
+.gameTitle{
+    font-size:1.2em;
+    font-weight:600;
+}
+
+.playerName{
+    color:#337AB7;
+    float:left;
+    padding:0px 5px;
+}
+
+#deleteGameButton{
+    position:absolute;
+    right:2px;
+    bottom:2px;
+}
