@@ -17,3 +17,4 @@ meteor add aldeed:autoform
 meteor add aldeed:collection2
 meteor add sacha:spin
 meteor add twbs:bootstrap
+testing
